@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>🌷Khaira's Page.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- Halaman 1: ketuk untuk mulai -->
+    <section class="intro" id="intro">
+      <h1>Hi, I wanna tell you something</h1>
+      <button class="play" id="start" type="button" aria-label="Mulai">&#9654;&#xFE0E;</button>
+      <p class="hint">Tap to Start</p>
+    </section>
+
+    <!-- Halaman 2: surat di atas kertas putih -->
+    <section class="letter" id="letter" hidden>
+      <div class="letter-wrap">
+        <div class="topbar">
+          <button class="back" type="button" data-back>&larr; Back</button>
+          <button class="sound" id="sound" type="button" aria-pressed="true">&#9834; musik</button>
+        </div>
+
+        <article class="paper">
+          <div class="isi">
+            <p style="--i:0">Sayang, if you read this. I’d say biggest apology to you, aku bener bener minta maaf karna melakukan kesalahan yang fatal ini tanpa mikirin perasaan kamu ☹️☹️☹️</p>
+            <p style="--i:1">Aku tau kamu pasti bosen baca kata maaf maaf maaf terus dari aku, but the point is i truly apologize for anything i did dan aku menyesal. Aku yang seharusnya protect kamu harder tapi malah kayak gini, aku minta maaf sayang..</p>
+            <p style="--i:2">Please give me a chance to proof that i’m not like what you think, i have love you so fucking much and it’s true. I fall for you, my mind my heart my soul is full of you.</p>
+            <p style="--i:3">Maaf kalo dari kemarin aku rese rewel padahal kamu lagi gamau aku ganggu, aku takut kamu ninggalin aku. Meskipun aku tau ini akibat dari ulah aku sendiri, but i’m still afraid.</p>
+            <p style="--i:4">Sayang, aku ga cinta siapapun lagi selain kamu. Aku ga menyangkal kalo tindakan aku salah terlepas ini masuk cheat or nah. Please forgive me ☹️☹️☹️</p>
+            <p style="--i:5">Aku tau kamu udah extra sabar banget ngadepin aku dari yang aku nyebelin, rese, termasuk ini. Aku lebih suka dimarahin dibandingkan didiemin kayak gini.. sayangku, aku minta maaf</p>
+          </div>
+
+          <div class="closing">
+            <!-- Ganti nama file foto di bawah sesuai foto kamu -->
+            <div class="photos">
+              <figure class="photo">
+                <img src="satu.jpg" alt="biggest wishes">
+              </figure>
+              <figure class="photo">
+                <img src="dua.jpg" alt="Us">
+              </figure>
+            </div>
+
+            <p class="caption">I truly love you.</p>
+            <p class="caption">Do you still love me?</p>
+
+            <div class="choices">
+              <button class="choice" id="btn-yes" type="button" aria-pressed="false">ofc I still love you</button>
+              <button class="choice" id="btn-no" type="button" aria-pressed="false">nevermore</button>
+            </div>
+
+            <div class="reply" id="reply" role="status" aria-live="polite" hidden>
+              <p id="reply-text"></p>
+            </div>
+          </div>
+        </article>
+
+        <button class="back" type="button" data-back>&larr; Back</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Ganti musik.mp3 dengan nama file lagu kamu (taruh di folder yang sama) -->
+  <audio id="musik" src="iloveyou.m4a" loop preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
